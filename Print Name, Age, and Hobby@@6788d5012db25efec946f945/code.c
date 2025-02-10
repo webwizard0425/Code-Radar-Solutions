@@ -6,6 +6,6 @@ int main() {
     scanf("%c",b);
     char c[40];
     scanf("%c",c);
-    printf("Name: %c\n",b);
+    printf("Name: %c",b);
     return 0;
 }
