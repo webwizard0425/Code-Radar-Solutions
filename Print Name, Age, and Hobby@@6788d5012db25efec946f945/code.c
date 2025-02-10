@@ -7,5 +7,7 @@ int main() {
     char c[40];
     scanf("%c",c);
     printf("Name: %c",b);
+     printf("Age: %d",a);
+      printf("Hobby: %c",c);
     return 0;
 }
