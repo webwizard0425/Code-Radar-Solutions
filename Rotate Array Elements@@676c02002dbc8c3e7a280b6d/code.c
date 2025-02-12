@@ -17,11 +17,17 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int k;
+      scanf("%d",&k);
     if(k>n){
-        k=n/k;
+        k=k%n;
     }
     reverse(arr,0,k+1,n);
     reverse(arr,k+1,n,n);
     reverse(arr,0,n,n);
+    for(int i=0;i<n;i++){
+        printf("%d",&arr[i]);
+    }
+    return 0;
 
 }
