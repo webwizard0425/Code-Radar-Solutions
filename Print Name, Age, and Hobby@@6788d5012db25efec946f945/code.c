@@ -3,12 +3,12 @@
 int main() {
     int a;
     scanf("%d", &a);
-    getchar(); 
+   // getchar(); 
 
     char b[100];
     scanf("%s", b); 
 
-    getchar(); 
+    //getchar(); 
 
     char c[100];
     scanf("%s", c); 
