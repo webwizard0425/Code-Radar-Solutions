@@ -6,12 +6,12 @@ int main() {
    // getchar(); 
 
     char b[100];
-    scanf("%s", b); 
+    scanf("%s", &b); 
 
     //getchar(); 
 
     char c[100];
-    scanf("%s", c); 
+    scanf("%s", &c); 
 
     printf("Name: %s\n", b);
     printf("Age: %d\n", a);
