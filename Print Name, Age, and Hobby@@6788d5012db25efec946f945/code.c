@@ -5,13 +5,13 @@ int main() {
     scanf("%d", &a);
     getchar(); 
 
-    char b[20];
-    scanf("s", b); 
+    char b[100];
+    scanf("%s", b); 
 
     getchar(); 
 
-    char c[40];
-    scanf("s", c); 
+    char c[100];
+    scanf("%s", c); 
 
     printf("Name: %s\n", b);
     printf("Age: %d\n", a);
