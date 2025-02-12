@@ -3,7 +3,9 @@ void reverse(int arr[],int s,int e,int n){
     int i=s;
     int j=e-1;
     while(i<j){
-        swap(arr[i],arr[j]);
+        int tep=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
         i++;
         j--;
     }
