@@ -1,15 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
-   // getchar(); 
-
+   
     char b[100];
     scanf("%s", &b); 
-
-    //getchar(); 
-
+     int a;
+    scanf("%d", &a);
     char c[100];
     scanf("%s", &c); 
 
