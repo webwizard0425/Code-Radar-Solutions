@@ -15,7 +15,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    k=n/k;
+    if(k>n){
+        k=n/k;
+    }
     reverse(arr,0,k+1,n);
     reverse(arr,k+1,n,n);
     reverse(arr,0,n,n);
