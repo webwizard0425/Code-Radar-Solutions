@@ -6,12 +6,12 @@ int main() {
     getchar(); 
 
     char b[20];
-    scanf("%19s", b); 
+    scanf("s", b); 
 
     getchar(); 
 
     char c[40];
-    scanf("%39s", c); 
+    scanf("s", c); 
 
     printf("Name: %s\n", b);
     printf("Age: %d\n", a);
