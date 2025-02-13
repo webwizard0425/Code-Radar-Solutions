@@ -14,6 +14,7 @@ int main(){
             break;
         }else if(i==n-1){
             printf("Sorted");
+            break;
         }
     }
 }
