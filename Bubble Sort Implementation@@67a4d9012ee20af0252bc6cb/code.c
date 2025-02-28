@@ -2,10 +2,10 @@
 void bubbleSort(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n-i-1;j++){
-            if(arr[i]>arr[j]){
-                int temp=arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
 
         }
@@ -13,7 +13,7 @@ void bubbleSort(int arr[],int n){
 }
 void printArray(int arr[],int n){
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
 }
 int main() {
@@ -27,5 +27,17 @@ int main() {
     printArray(arr,n);
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
