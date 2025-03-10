@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    if(a>b){
-        printf("True");
+int main(){
+    int x;
+    scanf("%d",&x);
+    if(x%2==0){
+        printf("Even");
     }
     else{
-        printf("False");
+        printf("Odd");
     }
     return 0;
 }
