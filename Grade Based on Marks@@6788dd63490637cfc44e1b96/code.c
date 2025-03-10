@@ -1,16 +1,22 @@
 #include <stdio.h>
 
 int main(){
-    int x, y, z;
-    scanf("%d %d %d",&x,&y,&z);
-    if(x>y && x>z){
-        printf("%d",x);
+    int x;
+    scanf("%d",&x);
+    if(x>=90){
+        printf("A");
     }
-    else if(y>x && y>z){
-        printf("%d",y);
+    else if(x>=80){
+        printf("B");
+    }
+    else if(x>=70){
+        printf("C");
+    }
+    else if(x>=60){
+        printf("D");
     }
     else{
-        printf("%d",z);
+        printf("F");
     }
     return 0;
 }
