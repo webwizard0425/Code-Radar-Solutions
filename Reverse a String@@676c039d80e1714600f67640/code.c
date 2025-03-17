@@ -24,7 +24,7 @@ int main() {
 
     reverseString(str);
 
-    printf(""%s\n", str);
+    printf("%s\n", str);
 
     return 0;
 }
