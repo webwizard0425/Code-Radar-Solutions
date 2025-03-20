@@ -33,7 +33,7 @@ int main(){
     }
     if(w==1){
     printf("%d",b);
-    }else{
+    }if(b==INT_MIN){
         printf("%d"-1);
     }
 }
