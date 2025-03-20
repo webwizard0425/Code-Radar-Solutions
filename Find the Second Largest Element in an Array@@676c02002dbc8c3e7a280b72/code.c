@@ -33,7 +33,7 @@ int main(){
     }
     if(w==1){
     printf("%d",b);
-    }else if(q==0){
+    }else{
         printf("%d"-1);
     }
 }
