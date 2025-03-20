@@ -31,7 +31,7 @@ int main(){
     }
      }
     }
-    if(w=1){
+    if(w==1){
     printf("%d",b);
     }else if(q==0){
         printf("%d"-1);
