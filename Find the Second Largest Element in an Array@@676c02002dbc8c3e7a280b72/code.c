@@ -17,7 +17,7 @@ int main(){
         if(arr[i]>b&&a!=b){
             b=arr[i];
     }
-   
+     }
     printf("%d",b);
     }
 }
