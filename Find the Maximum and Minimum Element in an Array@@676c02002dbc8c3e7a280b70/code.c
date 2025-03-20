@@ -9,6 +9,9 @@ int main(){
     }
     int a=INT_MIN;
     int b=INT_MAX;
+    if(n==1){
+        printf("%d %d",arr[i] ,arr[i]);
+    }
     for(int i=0;i<n;i++){
         if(arr[i]>a){
             a=arr[i];
