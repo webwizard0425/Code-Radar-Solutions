@@ -1,21 +1,35 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int k=0;k<n;k++){
-        scanf("%d ", &arr[k]);
-    }
-    int a=0
-    for(int i=1;i<n-1;i++){
-        int j=i+1;
-        if(arr[i-1]<arr[i]&&arr[i]>arr[j]){
-            a=1;
-            printf("%d", arr[i]);
-            break;
+#include <stdio.h>
+
+int findPeakElement(int arr[], int n) {
+    if (n == 1) 
+        return arr[0];  // If there's only one element, it's the peak
+
+    if (arr[0] > arr[1]) 
+        return arr[0];  // First element is a peak
+
+    if (arr[n - 1] > arr[n - 2]) 
+        return arr[n - 1];  // Last element is a peak
+
+    for (int i = 1; i < n - 1; i++) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+            return arr[i];  // Found a peak
         }
     }
-    if(a==0){
-        printf("%d",-1);
+
+    return -1; // No peak found (this should theoretically never happen)
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    int peak = findPeakElement(arr, n);
+    printf("%d\n", peak);
+
+    return 0;
 }
