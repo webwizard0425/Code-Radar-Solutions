@@ -10,6 +10,7 @@ int main(){
     for(int i=1;i<n-1;i++){
         int j=i+1;
         if(arr[i-1]<arr[i]&&arr[i]>arr[j]){
+            a=1;
             printf("%d", arr[i]);
             break;
         }
