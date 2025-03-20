@@ -6,12 +6,13 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d ", &arr[i]);
     }
+    int a=0
     for(int i=1;i<n-1;i++){
         int j=i+1;
         if(arr[i-1]<arr[i]&&arr[i]>arr[j]){
-            return arr[i];
+            printf("%d", arr[i]);
             break;
         }
     }
-    return -1;
+    if(a==0)printf("%d",-1);
 }
