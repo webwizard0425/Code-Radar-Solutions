@@ -29,6 +29,6 @@ int main(){
     if(w==1){
     printf("%d",b);
     }if(b==INT_MIN){
-        printf("%d"-1);
+        printf("%d",-1);
     }
 }
