@@ -7,13 +7,14 @@ int findPeakElement(int arr[], int n) {
     if (arr[0] > arr[1]) 
         return arr[0];  // First element is a peak
 
-    if (arr[n - 1] > arr[n - 2]) 
-        return arr[n - 1];  // Last element is a peak
+    
 
     for (int i = 1; i < n - 1; i++) {
         if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
             return arr[i];  // Found a peak
         }
+        if (arr[n - 1] > arr[n - 2]) 
+        return arr[n - 1];  // Last element is a peak
     }
 
     return -1; // No peak found (this should theoretically never happen)
