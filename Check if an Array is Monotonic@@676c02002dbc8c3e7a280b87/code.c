@@ -25,9 +25,9 @@ int main() {
     }
 
     if (isMonotonic(arr, n)) {
-        printf("The array is monotonic\n");
+        printf("YES");
     } else {
-        printf("The array is not monotonic\n");
+        printf("NO");
     }
 
     return 0;
