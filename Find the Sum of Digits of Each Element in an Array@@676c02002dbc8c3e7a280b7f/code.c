@@ -1,6 +1,6 @@
 #include<stdio.h>
 int sum(int a){
-    if(a>0){
+    if(a<0){
     a=-1*a;
     }
     int ans=0;
