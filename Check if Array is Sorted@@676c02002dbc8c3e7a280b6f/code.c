@@ -23,4 +23,3 @@ int main(){
         printf("Not Sorted\n");
     }
     }
-}
