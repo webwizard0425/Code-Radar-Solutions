@@ -10,11 +10,11 @@ int main(){
     int ed=n-1;
     while(st<ed){
         if(arr[ed]!=arr[st]){
-            printf("NO");
+            printf("%s",NO);
             return 0;
         }
         st++;
         ed--;
     }
-     printf("YES");
+     printf("%s",YES);
 }
