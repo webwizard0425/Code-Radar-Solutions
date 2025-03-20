@@ -15,7 +15,7 @@ int main(){
     }
     int b=INT_MIN;
      for(int i=0;i<n;i++){
-        if(arr[i]>b&&a!=b){
+        if(a!=b&&arr[i]>b){
             b=arr[i];
     }
      }
