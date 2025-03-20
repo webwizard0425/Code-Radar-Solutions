@@ -9,8 +9,8 @@ int main(){
     int k;
     scanf("%d",&k);
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(i!=j&&arr[i]+arr[j]==k){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==k){
                 printf("%d %d\n",arr[i] ,arr[j]);
             }
         }
