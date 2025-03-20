@@ -11,8 +11,8 @@ int main(){
     scanf("%d",&k);
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
+             if(arr[i]+arr[j]==k){
             if(a!=1){
-            if(arr[i]+arr[j]==k){
                 printf("%d %d\n",arr[i] ,arr[j]);
                 a=1;
             }
