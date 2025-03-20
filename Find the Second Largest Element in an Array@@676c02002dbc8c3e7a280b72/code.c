@@ -11,7 +11,6 @@ int main(){
     if(n==1){
         q=1;
         printf("%d",-1);
-        return;
     }
     int b=INT_MIN;
     int w=0;
@@ -34,7 +33,7 @@ int main(){
     }
     if(w=1){
     printf("%d",b);
-    }else{
+    }else if(q==0){
         printf("%d"-1);
     }
 }
