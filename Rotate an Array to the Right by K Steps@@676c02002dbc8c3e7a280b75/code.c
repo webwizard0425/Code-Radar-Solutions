@@ -13,7 +13,7 @@ int main(){
     }
     int a[n];
     int j=0;
-    for(int i=k;i<n;i++){
+    for(int i=k+1;i<n;i++){
         a[j]=arr[i];
         j++;
     }
