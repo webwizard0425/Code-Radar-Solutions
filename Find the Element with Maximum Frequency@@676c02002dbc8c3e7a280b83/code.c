@@ -8,7 +8,7 @@ int main(){
     }
     int count=0;
     int ans=0;
-    int a=0
+    int a=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(i!=j&&arr[i]==arr[j]){
@@ -16,6 +16,7 @@ int main(){
             }
         }
         if(count>a){
+            a=count;
             ans=arr[i];
         }
         count=0;
