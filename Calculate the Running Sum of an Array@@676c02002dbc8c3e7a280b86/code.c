@@ -15,7 +15,7 @@ int main() {
         ans[i]=ans[i-1]+arr[i];
     }
      for (int i = 0; i < n; i++) {
-        printf("%d",ans[i]);
+        printf("%d ",ans[i]);
     }
 
     return 0;
