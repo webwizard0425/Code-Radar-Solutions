@@ -1,5 +1,8 @@
 #include<stdio.h>
 int sum(int a){
+    if(a>0){
+    a=-1*a;
+    }
     int ans=0;
     while(a>0){
         int r=a%10;
