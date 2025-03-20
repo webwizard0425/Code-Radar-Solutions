@@ -9,7 +9,9 @@ int main(){
     }
     int a=INT_MIN;
     int b=INT_MAX;
+    int q=1;
     if(n==1){
+        q=2;
         printf("%d %d",arr[0] ,arr[0]);
     }
     for(int i=0;i<n;i++){
@@ -19,5 +21,7 @@ int main(){
             b=arr[i];
         }
     }
+    if(q==1){
     printf("%d %d", b ,a);
+    }
 }
