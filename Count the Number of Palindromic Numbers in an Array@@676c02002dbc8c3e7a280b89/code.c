@@ -10,7 +10,7 @@ bool ispalin(int a){
         rev=rev+r*10;
         a=a/10;
     }
-    if(rev=a) return true;
+    if(rev==a) return true;
     else return false;
 }
 int main(){
