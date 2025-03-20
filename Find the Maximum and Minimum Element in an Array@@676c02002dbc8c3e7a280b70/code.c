@@ -17,7 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i]>a){
             a=arr[i];
-        }else if(arr[i]<b){
+        }if(arr[i]<b){
             b=arr[i];
         }
     }
