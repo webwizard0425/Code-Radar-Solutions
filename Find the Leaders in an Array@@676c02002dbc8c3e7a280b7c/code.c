@@ -15,5 +15,6 @@ int main(){
             break;
         }
 }
+    printf("%d ",arr[n-1]);
     }
 }
