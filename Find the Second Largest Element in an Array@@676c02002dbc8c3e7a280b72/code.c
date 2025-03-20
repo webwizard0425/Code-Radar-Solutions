@@ -12,15 +12,16 @@ int main(){
         q=1;
         printf("%d",-1);
     }
+    int b=INT_MIN;
     int w=0;
-    if(q=0){
+    if(q==0){
     int a=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]>a){
             a=arr[i];
     }
     }
-    int b=INT_MIN;
+    
     int ans=a;
     
      for(int i=0;i<n;i++){
