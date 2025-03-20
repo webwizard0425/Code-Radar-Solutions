@@ -8,13 +8,19 @@ int main(){
        scanf("%d",&arr[i]);
        //arr[i]=scanf("%d",&a);
     }
-    for(int i=1;i<=n;i++){
-        if(arr[i-1]>arr[i]){
-            printf("Not Sorted");
-            break;
-        }else if(i==n-1){
-            printf("Sorted");
+      int isSorted = 1; 
+    for (int i = 0; i < n - 1; i++) { 
+        if (arr[i] > arr[i + 1]) { 
+            isSorted = 0;
             break;
         }
+    }
+
+    // Printing the result
+    if (isSorted) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
     }
 }
