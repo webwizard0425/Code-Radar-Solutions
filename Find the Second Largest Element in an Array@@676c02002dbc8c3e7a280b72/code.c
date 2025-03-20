@@ -12,6 +12,7 @@ int main(){
         if(arr[i]>a){
             a=arr[i];
     }
+    }
     int b=INT_MIN;
      for(int i=0;i<n;i++){
         if(arr[i]>b&&a!=b){
@@ -20,4 +21,3 @@ int main(){
      }
     printf("%d",b);
     }
-}
