@@ -11,7 +11,7 @@ int main(){
         printf("%d",arr[n/2]);
         return 0;
     }else{
-        int b=n/2
+        int b=n/2;
          a=(arr[b]+arr[b-1])/2;
         printf("%d",a);
         return 0;
