@@ -10,9 +10,8 @@ int main(){
         for(int j=i+1;j<n;j++){
             if(arr[i]<arr[j]){
                 break;
-            }else{
+            }else if(j==n-1){
             printf("%d ",arr[i]);
-            break;
         }
 }
     
