@@ -1,11 +1,11 @@
 #include<stdio.h>
-#includ<stdbool.h>
+#include<stdbool.h>
 bool ispalin(int a){
     if(a>9){
         return true;
     }
     int rev=0;
-    while(a<0){
+    while(a>0){
         int r=a%10;
         rev=r*10;
         a=a/10;
