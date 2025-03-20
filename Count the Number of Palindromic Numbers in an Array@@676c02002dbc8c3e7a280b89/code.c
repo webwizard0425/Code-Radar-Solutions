@@ -7,7 +7,7 @@ bool ispalin(int a){
     int rev=0;
     while(a>0){
         int r=a%10;
-        rev=r*10;
+        rev=rev+r*10;
         a=a/10;
     }
     if(rev=a) return true;
