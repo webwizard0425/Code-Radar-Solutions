@@ -11,6 +11,7 @@ int main(){
     if(n==1){
         q=1;
         printf("%d",-1);
+        return;
     }
     int b=INT_MIN;
     int w=0;
