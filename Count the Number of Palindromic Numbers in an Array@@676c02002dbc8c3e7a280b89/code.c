@@ -4,13 +4,14 @@ bool ispalin(int a){
      if (a >= 0 && a <= 9){
         return true;
     }
+    int b=a;
     int rev=0;
     while(a>0){
         int r=a%10;
         rev=rev*10+r;
         a=a/10;
     }
-    if(rev==a) return true;
+    if(rev==b) return true;
     else return false;
 }
 int main(){
