@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 bool ispalin(int a){
-    if(a>9){
+     if (a >= 0 && a <= 9){
         return true;
     }
     int rev=0;
