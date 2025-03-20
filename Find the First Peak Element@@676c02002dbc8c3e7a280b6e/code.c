@@ -15,5 +15,7 @@ int main(){
             break;
         }
     }
-    if(a==0)printf("%d",-1);
+    if(a==0){
+        printf("%d",-1);
+    }
 }
