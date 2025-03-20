@@ -15,7 +15,7 @@ int main(){
                 count++;
             }
         }
-        if(ans>count){
+        if(ans<count){
             ans=count;
             a=arr[i];
         }
