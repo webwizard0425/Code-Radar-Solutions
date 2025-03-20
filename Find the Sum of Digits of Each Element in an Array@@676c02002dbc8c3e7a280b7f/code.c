@@ -2,7 +2,7 @@
 int sum(int a){
     int ans=0;
     while(a>0){
-        r=a%10;
+        int r=a%10;
         ans+=r;
         a=a/10;
     }
