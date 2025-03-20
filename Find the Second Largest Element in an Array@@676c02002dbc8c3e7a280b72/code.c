@@ -26,7 +26,6 @@ int main(){
             b=arr[i];
     }
      }
-    }
     if(w==1){
     printf("%d",b);
     }if(b==INT_MIN){
