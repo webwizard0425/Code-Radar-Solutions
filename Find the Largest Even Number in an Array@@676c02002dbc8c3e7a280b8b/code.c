@@ -20,7 +20,7 @@ int main(){
         }
     }
     if(q==0){
-    printf("%d"a);
+    printf("%d",a);
     }else{
         printf("%d",-1);
     }
