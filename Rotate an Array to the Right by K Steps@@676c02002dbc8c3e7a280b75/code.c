@@ -17,7 +17,7 @@ int main(){
         a[j]=arr[i];
         j++;
     }
-    for(int i=0;i<k;i++){
+    for(int i=0;i<=k;i++){
         a[j++]=arr[i];
     }
     for(int i=0;i<n;i++){
