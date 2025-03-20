@@ -8,7 +8,9 @@ int main(){
     }
     int k;
     scanf("%d",&k);
+    if(k>n){
     k=k%n;
+    }
     int a[n];
     int j=0;
     for(int i=k;i<n;i++){
