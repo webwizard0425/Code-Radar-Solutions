@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include <stdbool.h>
+#include <math.h>
 bool prime(int a){
     if(a==2){
         return true;
