@@ -1,33 +1,22 @@
-#include<stdio.h>
-#include<limits.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    scanf("%d", &n);
+    int arr[n], ans[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int ans[n];
-    for(int i=0;i<n;i++){
-        ans[i]=arr[n-1];
-    }
-    ans[n-1]=-1;
-  
-    int q=INT_MIN;
-    for(int i=0;i<n;i++){
-          int a=0;
-        for(int j=i+1;j<n;j++){
-            if(arr[j]>q){
-                q=arr[j];
-               a=arr[j];
-            }
-            if(j==n-1){
-                ans[i]=a;
-            }
+    int maxRight = -1;
+    for (int i = n - 1; i >= 0; i--) {
+        ans[i] = maxRight;  
+        if (arr[i] > maxRight) {
+            maxRight = arr[i];  
         }
-       
     }
-    for(int i=0;i<n;i++){
-        printf("%d ",ans[i]);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", ans[i]);
     }
+
+    return 0;
 }
