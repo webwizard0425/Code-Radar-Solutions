@@ -8,11 +8,11 @@ int main(){
     int e=l-1;
     while(i<e){
         if(str[i]!=str[e]){
-            printf("NO");
+            printf("No");
             return 0;
         }
         i++;
         e--;
     }
-    printf("YES");
+    printf("Yes");
 }
