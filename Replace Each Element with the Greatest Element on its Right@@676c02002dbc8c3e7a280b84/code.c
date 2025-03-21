@@ -20,8 +20,11 @@ int main(){
                 q=arr[j];
                a=arr[j];
             }
+            if(j==n-1){
+                ans[i]=a;
+            }
         }
-        ans[i]=a;
+       
     }
     for(int i=0;i<n;i++){
         printf("%d ",ans[i]);
