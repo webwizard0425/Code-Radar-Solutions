@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<limits.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -12,9 +13,11 @@ int main(){
     }
     ans[n-1]=-1;
     int a=0;
+    int q=INT_MIN;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
+            if(arr[j]>q){
+                q=arr[j];
                a=arr[j];
             }
         }
