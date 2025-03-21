@@ -13,6 +13,6 @@ int main(){
         scanf("%f",s.mark);
         printf("%d",s.roll);
         printf("%s",s.name);
-        printf("%f",s.mark)
+        printf("%f",s.mark);
     }
 }
