@@ -12,5 +12,5 @@ int main(){
         }
         i++;
     }
-    puts(str);
+    printf("%s",str);
 }
