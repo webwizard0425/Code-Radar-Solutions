@@ -8,7 +8,6 @@ struct Student {
 
 int main() {
     int n;
-    printf("Enter number of students: ");
     scanf("%d", &n);
     
     struct Student s[n];  // Declare an array of structures
