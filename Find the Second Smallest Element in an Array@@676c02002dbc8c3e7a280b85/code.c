@@ -18,7 +18,7 @@ int main(){
      for(int i=0;i<n;i++){
         if(arr[i]<b&&arr[i]!=a){
             b=arr[i];
-            z=b;
+            z=arr[i];
         }
     }
     printf("%d",z);
