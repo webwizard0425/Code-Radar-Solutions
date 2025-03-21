@@ -13,10 +13,10 @@ int main(){
                 count++;
             }
         }
+        }
         if(count>ans){
             ans=count;
             q=str[i];
-        }
         count=0;
         i++;
     }
