@@ -9,7 +9,7 @@ int main(){
             str[i]='*';
         }
         if(str[i]=='o'||str[i]=='O'){
-            str[i]=='#'
+            str[i]=='#';
         }
         i++;
     }
