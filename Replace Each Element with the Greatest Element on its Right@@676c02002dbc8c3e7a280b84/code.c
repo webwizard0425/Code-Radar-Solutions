@@ -8,8 +8,9 @@ int main(){
     }
     int ans[n];
     for(int i=0;i<n;i++){
-        ans[i]=-1;
+        ans[i]=arr[n-1];
     }
+    ans[n-1]=-1;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]<arr[j]){
