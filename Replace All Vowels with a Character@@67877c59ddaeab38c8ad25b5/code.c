@@ -3,6 +3,8 @@
 int main(){
     char str[100];
     scanf("%s",str);
+
+    
     char s;
     scanf("%c",&s);
     int i=0;
