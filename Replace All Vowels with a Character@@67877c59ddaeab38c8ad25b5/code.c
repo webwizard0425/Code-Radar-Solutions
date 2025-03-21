@@ -8,7 +8,7 @@ int main(){
         if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='U'){
             str[i]='*';
         }
-        if(str[i]=='o'||str[i]=='O'){
+        else if(str[i]=='o'||str[i]=='O'){
             str[i]=='#';
         }
         i++;
