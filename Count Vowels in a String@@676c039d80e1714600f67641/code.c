@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     char str[100];
-    scanf("%c"str);
+    scanf("%s",str);
     int count=0;
     int i=0;
     while(i!='\0'){
