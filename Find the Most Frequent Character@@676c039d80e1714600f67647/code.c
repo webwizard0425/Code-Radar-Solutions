@@ -9,7 +9,7 @@ int main(){
     char q;
     while(str[i]!='\0'){
         for(int j=0;j!='\0';j++){
-            if(i!=j&&char[i]==char[j]){
+            if(i!=j&&str[i]==str[j]){
                 count++;
             }
         }
