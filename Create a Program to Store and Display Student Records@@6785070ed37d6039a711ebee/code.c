@@ -1,18 +1,34 @@
-#include<stdio.h>
-struct Student{
+#include <stdio.h>
+
+struct Student {
     int roll;
     char name[50];
     float mark;
-}s;
-int main(){
+};
+
+int main() {
     int n;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d",&s.roll);
-        scanf("%s",s.name);
-        scanf("%f",&s.mark);
-        printf("Roll Number: %d",s.roll);
-        printf("Name: %s",s.name);
-        printf("Marks: %.2f",s.mark);
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    
+    struct Student s[n];  // Declare an array of structures
+    
+    for (int i = 0; i < n; i++) {
+        printf("\nEnter details for student %d:\n", i + 1);
+        printf("Roll Number: ");
+        scanf("%d", &s[i].roll);
+        
+        printf("Name: ");
+        scanf(" %[^\n]", s[i].name); // Reads full name with spaces
+        
+        printf("Marks: ");
+        scanf("%f", &s[i].mark);
     }
+
+    printf("\nStudent Details:\n");
+    for (int i = 0; i < n; i++) {
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", s[i].roll, s[i].name, s[i].mark);
+    }
+
+    return 0;
 }
