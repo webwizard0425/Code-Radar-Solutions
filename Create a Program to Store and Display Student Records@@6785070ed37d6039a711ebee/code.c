@@ -11,8 +11,8 @@ int main(){
         scanf("%d",&s.roll);
         scanf("%s",s.name);
         scanf("%f",&s.mark);
-        printf("%d",s.roll);
-        printf("%s",s.name);
-        printf("%f",s.mark);
+        printf("Roll Number: %d",s.roll);
+        printf("Name: %s",s.name);
+        printf("Marks: %.2f",s.mark);
     }
 }
