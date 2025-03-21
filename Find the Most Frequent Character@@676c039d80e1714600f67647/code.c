@@ -6,19 +6,20 @@ int main(){
     int count=0;
     int ans=0;
     int i=0;
-    char q;
+    char q='\0';
     while(str[i]!='\0'){
-        for(int j=0;j!='\0';j++){
+        for(int j=0;str[j]!='\0';j++){
             if(i!=j&&str[i]==str[j]){
                 count++;
             }
         }
-        }
-        if(count>ans){
+          if(count>ans){
             ans=count;
             q=str[i];
         count=0;
         i++;
     }
+        }
+      
     printf("%c",q);
 }
