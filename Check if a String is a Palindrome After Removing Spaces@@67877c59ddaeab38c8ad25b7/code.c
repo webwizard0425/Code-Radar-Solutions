@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main() {
     char s[100];
-    char s2[100] = "";  // Initialize to empty string
+    char s2[100] = "";  // store cleaned-up version
 
     fgets(s, sizeof(s), stdin);
 
-    // Remove spaces
+    // Remove spaces and convert to lowercase
     for (int i = 0; i < strlen(s); i++) {
         if (s[i] != ' ' && s[i] != '\n') {
-            char temp[2];
-            temp[0] = s[i];
-            temp[1] = '\0';
-            strcat(s2, temp);
+            char ch = tolower(s[i]);
+            int len = strlen(s2);
+            s2[len] = ch;
+            s2[len + 1] = '\0';
         }
     }
 
+    //printf("Processed string: %s\n", s2);
 
     // Check for palindrome
     int len = strlen(s2);
