@@ -1,24 +1,25 @@
 #include <stdio.h>
-
+#include <string.h>
 int main() {
     char str[100];
-    scanf(" %[^\n]", str); // Read the input string
-
-    int freq[256] = {0}; // Array to store frequency of each character
-    int maxFreq = 0;
-    char maxChar = '\0';
-
-    // Count frequency of each character
-    for (int i = 0; str[i] != '\0'; i++) {
-        freq[(unsigned char)str[i]]++; // Store frequency in ASCII index
-
-        // Update max frequency and character
-        if (freq[(unsigned char)str[i]] > maxFreq) {
-            maxFreq = freq[(unsigned char)str[i]];
-            maxChar = str[i];
+    fgets(str, sizeof(str), stdin);
+    int n = strlen(str);
+    int max = 0;
+    char final;
+    
+    for (int i = 0; i < n; i++) {
+        char ch = str[i];
+        int count = 1; 
+        for (int j = i + 1; j < n; j++) {
+            if (str[j] == ch) {
+                count++;
+            }
+        }
+        if (count > max || (count == max && ch < final)) {
+            max = count;
+            final = ch;
         }
     }
-
-    printf("%c\n", maxChar);
+    printf("%c", final);
     return 0;
 }
