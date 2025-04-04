@@ -17,7 +17,6 @@ int main() {
         }
     }
 
- /*   printf("Processed string: %s\n", s2);
 
     // Check for palindrome
     int len = strlen(s2);
@@ -26,7 +25,7 @@ int main() {
             printf("No\n");
             return 0;
         }
-    }*/
+    }
 
     printf("Yes\n");
     return 0;
