@@ -8,7 +8,7 @@ int main() {
     int n = strlen(str);
 
     for (int i = 0; i < n; i++) {
-        char ch = tolower(str[i]);
+        char ch = toupper(str[i]);
         printf("%c", ch);
     }
 
