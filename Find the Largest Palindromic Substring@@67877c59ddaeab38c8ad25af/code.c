@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    printf("Longest palindromic substring: ");
+    //printf("Longest palindromic substring: ");
     for (int i = start; i < start + maxLen; i++) {
         printf("%c", str[i]);
     }
