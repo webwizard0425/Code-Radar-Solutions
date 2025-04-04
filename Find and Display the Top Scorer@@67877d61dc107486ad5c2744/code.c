@@ -1,4 +1,4 @@
-// Your code here...#include <stdio.h>
+
 #include <string.h>
 
 struct Student {
