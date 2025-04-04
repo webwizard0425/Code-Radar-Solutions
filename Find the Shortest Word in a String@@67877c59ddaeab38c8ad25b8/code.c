@@ -27,6 +27,6 @@ int main() {
         }
     }
 
-    printf("Shortest word: %s\n", ans);
+    printf("%s", ans);
     return 0;
 }
